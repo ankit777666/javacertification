@@ -1,0 +1,47 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+  <bean name="sequence"
+    class="com.ankit777666.javacertification.problem1.Sequence">
+    <property name="prefix">
+    <value>30</value>
+    </property>
+    <property name="suffix">
+    <value>A</value>
+    </property>
+    <property name="initial">
+    <value>100000</value>
+    </property>
+  </bean>
+
+  <!-- <bean name="sequence1"
+    class="com.ankit777666.javacertification.problem1.Sequence">
+    <constructor-arg>
+    <value>30</value>
+    </constructor-arg>
+    <constructor-arg>
+    <value>A</value>
+    </constructor-arg>
+    <constructor-arg>
+    <value>100000</value>
+    </constructor-arg>
+  </bean> -->
+
+  <!-- <bean name="sequence2"
+    class="com.ankit777666.javacertification.problem1.Sequence">
+    <property name="prefix" value="30"/>
+    <property name="prefix" value="A"/>
+    <property name="initial" value="100000"/>
+
+  </bean>
+
+  <bean name="sequence3"
+    class="com.ankit777666.javacertification.problem1.Sequence">
+    <constructor-arg value="30"/>
+    <constructor-arg value="A"/>
+    <constructor-arg value="100000"/>
+
+  </bean> -->
+</beans>
