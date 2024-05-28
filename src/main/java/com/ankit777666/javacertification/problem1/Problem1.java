@@ -17,7 +17,7 @@ public class Problem1 {
 
     ApplicationContext context = new GenericXmlApplicationContext("beans.xml");
     // Sequence generator = (Sequence) context.getBean("sequence1");
-    Sequence generator = context.getBean("sequence", Sequence.class);
+    Sequence generator = context.getBean("sequence1", Sequence.class);
     System.out.println("generator.nextValue() ---> " + generator.nextValue());
     System.out.println("generator.nextValue() ---> " + generator.nextValue());
 
