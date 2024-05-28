@@ -17,9 +17,17 @@ public class Problem1 {
 
     ApplicationContext context = new GenericXmlApplicationContext("beans.xml");
     // Sequence generator = (Sequence) context.getBean("sequence1");
-    Sequence generator = context.getBean("sequence1", Sequence.class);
-    System.out.println("generator.nextValue() ---> " + generator.nextValue());
-    System.out.println("generator.nextValue() ---> " + generator.nextValue());
+    Sequence generator = context.getBean("sequence", Sequence.class);
+    System.out.println("generator.nextValue() --> " + generator.nextValue());
+    System.out.println("generator.nextValue() --> " + generator.nextValue());
+
+    var basePackages = "com.ankit777666.javacertification.problem1";
+    try (var context1 = new AnnotationConfigApplicationContext(basePackages)) {
+      var sequencesWithDao = context1.getBean(SequenceDao.class);
+      System.out.println("generator.nextValue() --> " + sequencesWithDao.getNextValue("IT"));
+      System.out.println("generator.nextValue() --> " + sequencesWithDao.getNextValue("IT"));
+
+    }
 
   }
 
