@@ -1,4 +1,4 @@
-package com.ankit777666.javacertification.problem1;
+package com.ankit777666.javacertification.chapter1.problem1;
 
 public interface SequenceDao {
   SequenceWithDao getSequenceWithDao(String sequenceId);

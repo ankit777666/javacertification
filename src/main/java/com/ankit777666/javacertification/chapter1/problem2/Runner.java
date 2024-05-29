@@ -2,7 +2,7 @@
  * Create POJOs by invoking the constructor
  */
 
-package com.ankit777666.javacertification.problem2;
+package com.ankit777666.javacertification.chapter1.problem2;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

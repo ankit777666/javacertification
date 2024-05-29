@@ -1,4 +1,4 @@
-package com.ankit777666.javacertification.problem2;
+package com.ankit777666.javacertification.chapter1.problem2;
 
 public class Disc extends Product {
   private final int capacity;

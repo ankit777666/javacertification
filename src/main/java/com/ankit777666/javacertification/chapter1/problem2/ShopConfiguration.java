@@ -1,4 +1,4 @@
-package com.ankit777666.javacertification.problem2;
+package com.ankit777666.javacertification.chapter1.problem2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
