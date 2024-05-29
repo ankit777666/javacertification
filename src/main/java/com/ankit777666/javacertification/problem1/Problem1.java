@@ -24,8 +24,8 @@ public class Problem1 {
     var basePackages = "com.ankit777666.javacertification.problem1";
     try (var context1 = new AnnotationConfigApplicationContext(basePackages)) {
       var sequencesWithDao = context1.getBean(SequenceDao.class);
-      System.out.println("generator.nextValue() --> " + sequencesWithDao.getNextValue("IT"));
-      System.out.println("generator.nextValue() --> " + sequencesWithDao.getNextValue("IT"));
+      System.out.println("generator.nextValue() ---> " + sequencesWithDao.getNextValue("IT"));
+      System.out.println("generator.nextValue() ---> " + sequencesWithDao.getNextValue("IT"));
 
     }
 
