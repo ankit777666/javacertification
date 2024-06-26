@@ -6,6 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.core.io.Resource;
 
 import com.ankit777666.javacertification.chapter1.problem2.Disc;
 import com.ankit777666.javacertification.chapter1.problem2.Product;
@@ -22,9 +23,16 @@ public class ShopConfigration {
     return new PropertySourcesPlaceholderConfigurer();
   }
 
+  // @Bean
+  // public Product dvdrw() {
+  // return new Disc("DVD-RW", 1.5, 4700, specialEndOfyearDiscountField);
+  // }
+  @Value("classpath:banner.txt")
+  private Resource banner;
+
   @Bean
-  public Product dvdrw() {
-    return new Disc("DVD-RW", 1.5, 4700, specialEndOfyearDiscountField);
+  public BannerLoader bannerLoader() {
+    return new BannerLoader(banner);
   }
 
 }
